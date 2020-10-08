@@ -1,0 +1,30 @@
+<mat-card>
+    <mat-card-header>
+            <mat-card-title>Categoria</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="form" fxLayout="column">
+            <mat-form-field>
+                <input matInput placeholder="Modelo" formControlName="modelo" type="text">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Ano" formControlName="ano" type="number">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Cor" formControlName="cor" type="text">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Placa" formControlName="placa" type="text">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Valor do Veículo" formControlName="valor" type="number">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="detalhes" formControlName="detalhes" type="text">
+            </mat-form-field>
+        </form>
+        <mat-card-actions align="end">
+            <button mat-raised-button (click)="cadastrar()">Cadastrar</button>
+        </mat-card-actions>
+    </mat-card-content>
+</mat-card>
